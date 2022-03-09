@@ -1,0 +1,22 @@
+[
+  {
+    "model": "User",
+    "data": {
+      "id": "6212eb6ec9d4824ae9598674",
+      "resource": {
+        "password2": null,
+        "password": "123456",
+        "avatar": "",
+        "email": "test@gmail.com",
+        "gender": "M",
+        "phone": "6834893974",
+        "idType": "rut",
+        "idNumber": "317088221",
+        "lastName": "Admin",
+        "firstName": "Super"
+      },
+      "roleId": "6209f80f056304ba2117540d",
+      "organizationId": "6209f81193cf902e275ba33a"
+    }
+  }
+]

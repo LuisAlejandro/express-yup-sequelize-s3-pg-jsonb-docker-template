@@ -1,0 +1,62 @@
+{
+  "name": "express-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An Express-Sequelize template",
+  "scripts": {
+    "dev": "node ./api/api.js",
+    "fixtures": "node ./api/fixtures.js",
+    "diagram": "node ./api/diagram.js",
+    "lint": "eslint ./api/. ./config/.",
+    "start": "yarn run nodemon",
+    "nodemon": "cross-env NODE_ENV=development nodemon --exec 'yarn run dev'",
+    "prepush": "yarn test",
+    "pretest": "yarn run lint",
+    "production": "cross-env NODE_ENV=production node ./api/api.js"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      ".git",
+      "node_modules/**/node_modules",
+      "api/fixtures/**/*"
+    ],
+    "verbose": true,
+    "watch": [
+      "api/",
+      "config/"
+    ],
+    "ext": "js,json"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.991.0",
+    "axios": "^0.23.0",
+    "bcrypt": "^5.0.1",
+    "bluebird": "^3.7.2",
+    "bson": "^4.4.1",
+    "chance": "^1.1.8",
+    "core-js": "^2.6.9",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "express-routes-mapper": "^1.1.0",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "nodemailer": "^6.6.3",
+    "numbro": "^2.3.6",
+    "pg": "^8.7.1",
+    "pluralize": "^8.0.0",
+    "sequelize": "^6.6.5",
+    "sequelize-fixtures": "^1.2.0",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "fs-extra": "^9.1.0",
+    "nodemon": "^2.0.7"
+  }
+}

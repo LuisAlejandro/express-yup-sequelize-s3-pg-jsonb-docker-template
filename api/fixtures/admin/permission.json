@@ -1,0 +1,686 @@
+[
+  {
+    "model": "Permission",
+    "data": {
+      "id": "62147a2b022fdb80fae42444",
+      "resource": {
+        "name": "create files"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "62147a30c4fdceaeb9542a4f",
+      "resource": {
+        "name": "destroy files"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "62147a37d8cff00e53a5b526",
+      "resource": {
+        "name": "view catalog"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "62147a3fe918b93b2c5d975b",
+      "resource": {
+        "name": "create catalog"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "6214235f34e2654ef5a51404",
+      "resource": {
+        "name": "view self"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "62142367e18a388161944d9f",
+      "resource": {
+        "name": "create self"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "6214236dbe03ac2c389be1f8",
+      "resource": {
+        "name": "edit self"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "62142373616e67c00a53fdf9",
+      "resource": {
+        "name": "destroy self"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce296b",
+      "resource": {
+        "name": "view alignments"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce296c",
+      "resource": {
+        "name": "view deliveryaddresses"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce296d",
+      "resource": {
+        "name": "view devices"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce296e",
+      "resource": {
+        "name": "view doctors"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce296f",
+      "resource": {
+        "name": "view insoles"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2970",
+      "resource": {
+        "name": "view materials"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2971",
+      "resource": {
+        "name": "view organizations"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2972",
+      "resource": {
+        "name": "view patients"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2973",
+      "resource": {
+        "name": "view permissions"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2974",
+      "resource": {
+        "name": "view pickupaddresses"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2975",
+      "resource": {
+        "name": "view products"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2976",
+      "resource": {
+        "name": "view requests"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2977",
+      "resource": {
+        "name": "view roles"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2978",
+      "resource": {
+        "name": "view scanners"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2979",
+      "resource": {
+        "name": "view statuses"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce297a",
+      "resource": {
+        "name": "view terminations"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce297b",
+      "resource": {
+        "name": "view users"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce297c",
+      "resource": {
+        "name": "create alignments"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce297d",
+      "resource": {
+        "name": "create deliveryaddresses"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce297e",
+      "resource": {
+        "name": "create devices"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce297f",
+      "resource": {
+        "name": "create doctors"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2980",
+      "resource": {
+        "name": "create insoles"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2981",
+      "resource": {
+        "name": "create materials"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2982",
+      "resource": {
+        "name": "create organizations"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2983",
+      "resource": {
+        "name": "create patients"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2984",
+      "resource": {
+        "name": "create permissions"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2985",
+      "resource": {
+        "name": "create pickupaddresses"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2986",
+      "resource": {
+        "name": "create products"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2987",
+      "resource": {
+        "name": "create requests"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2988",
+      "resource": {
+        "name": "create roles"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2989",
+      "resource": {
+        "name": "create scanners"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce298a",
+      "resource": {
+        "name": "create statuses"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce298b",
+      "resource": {
+        "name": "create terminations"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce298c",
+      "resource": {
+        "name": "create users"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce298d",
+      "resource": {
+        "name": "edit alignments"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce298e",
+      "resource": {
+        "name": "edit deliveryaddresses"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce298f",
+      "resource": {
+        "name": "edit devices"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2990",
+      "resource": {
+        "name": "edit doctors"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2991",
+      "resource": {
+        "name": "edit insoles"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2992",
+      "resource": {
+        "name": "edit materials"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2993",
+      "resource": {
+        "name": "edit organizations"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2994",
+      "resource": {
+        "name": "edit patients"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2995",
+      "resource": {
+        "name": "edit permissions"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2996",
+      "resource": {
+        "name": "edit pickupaddresses"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2997",
+      "resource": {
+        "name": "edit products"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2998",
+      "resource": {
+        "name": "edit requests"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce2999",
+      "resource": {
+        "name": "edit roles"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce299a",
+      "resource": {
+        "name": "edit scanners"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce299b",
+      "resource": {
+        "name": "edit statuses"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce299c",
+      "resource": {
+        "name": "edit terminations"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce299d",
+      "resource": {
+        "name": "edit users"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce299e",
+      "resource": {
+        "name": "destroy alignments"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce299f",
+      "resource": {
+        "name": "destroy deliveryaddresses"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce29a0",
+      "resource": {
+        "name": "destroy devices"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce29a1",
+      "resource": {
+        "name": "destroy doctors"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce29a2",
+      "resource": {
+        "name": "destroy insoles"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce29a3",
+      "resource": {
+        "name": "destroy materials"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce29a4",
+      "resource": {
+        "name": "destroy organizations"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce29a5",
+      "resource": {
+        "name": "destroy patients"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce29a6",
+      "resource": {
+        "name": "destroy permissions"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce29a7",
+      "resource": {
+        "name": "destroy pickupaddresses"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce29a8",
+      "resource": {
+        "name": "destroy products"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce29a9",
+      "resource": {
+        "name": "destroy requests"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce29aa",
+      "resource": {
+        "name": "destroy roles"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce29ab",
+      "resource": {
+        "name": "destroy scanners"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce29ac",
+      "resource": {
+        "name": "destroy statuses"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce29ad",
+      "resource": {
+        "name": "destroy terminations"
+      }
+    }
+  },
+  {
+    "model": "Permission",
+    "data": {
+      "id": "620b2ff8ead0a57ae9ce29ae",
+      "resource": {
+        "name": "destroy users"
+      }
+    }
+  }
+]
