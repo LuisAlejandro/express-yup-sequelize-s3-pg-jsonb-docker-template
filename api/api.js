@@ -5,7 +5,6 @@ const http = require("http");
 const cors = require("cors");
 const express = require("express");
 const helmet = require("helmet");
-const mapRoutes = require("express-routes-mapper");
 
 /**
  * server configuration
@@ -18,6 +17,7 @@ const authorizationMiddleware = require("./middlewares/authorization");
 const validationMiddleware = require("./middlewares/validation");
 const outputMiddleware = require("./middlewares/output");
 const errorMiddleware = require("./middlewares/error");
+const buildRouter = require("./utils/router");
 
 // environment: development, testing, production
 const environment = process.env.NODE_ENV  || "development";
@@ -27,7 +27,7 @@ const environment = process.env.NODE_ENV  || "development";
  */
 const api = express();
 const server = http.Server(api);
-const mappedRoutes = mapRoutes(config.publicRoutes, "api/controllers/");
+const router = buildRouter(config.publicRoutes);
 const DB = dbService(environment, config.migrate).start();
 
 // allow cross origin requests
@@ -53,7 +53,7 @@ api.use(authorizationMiddleware);
 api.use(validationMiddleware);
 
 // public REST API
-api.use("/", mappedRoutes);
+api.use("/", router);
 
 // Format and return output
 api.use(outputMiddleware);

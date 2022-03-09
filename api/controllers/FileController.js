@@ -1,5 +1,4 @@
-const AWS = require("aws-sdk");
-const bluebird = require('bluebird');
+const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
 const {
   emailSchema,
   tokenSchema,
@@ -11,17 +10,8 @@ const {
 
 const getS3Instance = (req, next) => {
   try {
-    // Configurando AWS con acceso, secret key y region
-    const region = process.env.AWS_REGION;
-    const accessKeyId = process.env.AWS_ACCESS_KEY;
-    const secretAccessKey = process.env.AWS_SECRET_KEY;
-    
-    // Configurando AWS para usar promesas
-    AWS.config.setPromisesDependency(bluebird);
-    AWS.config.update({ accessKeyId, secretAccessKey, region });
-    
-    // iniciando instancia S3
-    return new AWS.S3();
+    // iniciando cliente S3
+    return new S3Client({ region: process.env.AWS_REGION });
   } catch (err) {
     req.error = {
       status: 500,
@@ -70,14 +60,15 @@ const FileController = () => {
     const s3 = getS3Instance(req, next);
     
     // carga de archivo en S3
-    const { Location, Key } = await s3.upload({
+    const command = new PutObjectCommand({
       Bucket: req.payload.values.bucketname,
       Key: key,
       Body: body,
       ACL: 'public-read',
       ContentEncoding: 'base64',
       ContentType: req.payload.values.type,
-    }).promise();
+    });
+    const { Location, Key } = await s3.send(command);
 
     req.result = { url: Location, filename: Key };    
     return next();
