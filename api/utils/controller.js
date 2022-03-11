@@ -6,27 +6,36 @@ const { getUniqueQuery } = require("./queries");
 const extractAsFk = (options) => {
   const bt = Object.values(options.model.associations)
                    .filter(a => a.associationType === 'BelongsTo');
+  const bm = Object.values(options.model.associations)
+                   .filter(a => a.associationType === 'BelongsToMany');
   const hm = Object.values(options.model.associations)
                    .filter(a => a.associationType === 'HasMany');
-  const btfk = [].concat(bt.map(a => a.foreignKey));
+  const ho = Object.values(options.model.associations)
+                   .filter(a => a.associationType === 'HasOne');
+  const btfk = bt.map(a => a.foreignKey);
   const hmfk = hm.map(a => a.foreignKey);
+  const bmfk = bm.map(a => a.foreignKey);
+  const hofk = ho.map(a => a.foreignKey);
   const btas = bt.map(a => a.as);
   const hmas = hm.map(a => a.as);
-  return { btas, btfk, hmas, hmfk };
+  const bmas = bm.map(a => a.as);
+  const hoas = ho.map(a => a.as);
+  return { btas, btfk, hmas, hmfk, bmas, bmfk, hoas, hofk };
 };
 
 const filterPayload = (options) => {
-  const { btas, btfk, hmas, hmfk } = extractAsFk(options);
+  const { btas, btfk, hmas, hmfk, bmas, bmfk, hoas, hofk } = extractAsFk(options);
   const fks = _.pick(options.values, btfk);
-  const resource = _.omit(options.values, [].concat(btas, btfk, hmas, hmfk, ['id', 'updatedAt', 'createdAt']));
+  const toOmit = [].concat(btas, btfk, hmas, hmfk, bmas, bmfk, hoas, hofk, ['id', 'updatedAt', 'createdAt']);
+  const resource = _.omit(options.values, toOmit);
   return { fks, resource };
 };
 
 const filterIncludes = (options) => {
-  const { btas, hmas } = extractAsFk(options);
+  const { btas, hmas, bmas, hoas } = extractAsFk(options);
   const excludes = _.get(options, 'config.model.excludes', []);
   const rm = new Set(excludes);
-  return [].concat(btas, hmas).filter(e => !rm.has(e));
+  return [].concat(btas, hmas, bmas, hoas).filter(e => !rm.has(e));
 };
 
 const findBy = async (options, req, next) => {

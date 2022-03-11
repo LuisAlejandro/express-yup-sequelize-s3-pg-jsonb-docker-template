@@ -26,6 +26,16 @@ const { userDetailsSchema } = require("../middlewares/schemas");
 
 const UserController = () => {
 
+  const selfDetail = async (req, res, next) => {
+    req.result = await findOneBy({
+      model: User,
+      where: { id: req.user.id },
+      config: req.payload.config,
+    }, req, next);
+    req.excludes = [];
+    return next();
+  };
+
   const findUserById = async (req, res, next) => {
     req.result = await findOneBy({
       model: User,
@@ -71,6 +81,7 @@ const UserController = () => {
   };
 
   return {
+    selfDetail,
     findUserById,
     findUsers,
     upsertUser,
@@ -80,6 +91,14 @@ const UserController = () => {
 
 UserController.routes = {
   // Users
+  'GET /self/detail': {
+    path: 'UserController.selfDetail',
+    schema: {
+      email: emailSchema,
+      token: tokenSchema,
+      config: configSchema,
+    }
+  },
   'GET /users/detail/by-id': {
     path: 'UserController.findUserById',
     schema: {

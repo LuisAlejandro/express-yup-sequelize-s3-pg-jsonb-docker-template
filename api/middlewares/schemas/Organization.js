@@ -13,7 +13,19 @@ const organizationDetailsSchema = yup
       .required()
       .label('Nombre de la Organización')
       .default(''),
+    type: yup
+      .string()
+      .required()
+      .oneOf([
+        'A',
+        'B',
+        'C',
+        'D',
+      ], '"Tipo de organización" debe ser uno de los siguientes valores: A, B, C, D')
+      .label('Tipo de Organización')
+      .default(''),
     logo: urlSchema
+      .optional()
       .label('Logo')
       .default(''),
     createdAt: stringDateSchema,

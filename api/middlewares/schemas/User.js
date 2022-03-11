@@ -25,6 +25,7 @@ const userDetailsSchema = yup
     gender: genderSchema,
     email: emailSchema,
     avatar: urlSchema
+      .optional()
       .label('Avatar')
       .default(''),
     password: yup
